@@ -9,7 +9,7 @@ Sistemas gerenciador de tarefas, possuindo um cliente e um serviço web construi
  - [React v18.2.0](https://pt-br.reactjs.org)
  - [MongoDB (mongoose v6.5.2)](https://mongoosejs.com)
 
-## Sitema
+## Sistema
 
 O sistema está rodando inteiramente em nuvem, utilizando o Heroku. Segue os links correspondentes ao frontend e backend:
 
