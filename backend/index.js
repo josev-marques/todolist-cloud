@@ -1,9 +1,8 @@
 import express from 'express';
-import path from 'path';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import router from './src/app';
-import { URLS, PORT } from './src/config/urls';
+import router from './src/app/index.js';
+import { URLS, PORT } from './src/config/urls.js';
 
 const app = express();
 app.disable('x-powered-by');
@@ -16,8 +15,13 @@ app.use(
   }),
 );
 
-app.use(express.static(path.join(__dirname, "..", "build")));
-app.use(express.static("public"));
+app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Headers", "*");
+    res.setHeader("Access-Control-Allow-Methods", "*");
+    res.setHeader("Access-Control-Allow-Credentials", true);
+    next();
+});
 
 app.use(router);
 

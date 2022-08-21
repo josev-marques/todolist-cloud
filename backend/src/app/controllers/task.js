@@ -1,5 +1,5 @@
 import { Router } from "express";
-import taskSchema from '../../database/schemas/task';
+import taskSchema from '../../database/schemas/task.js';
 
 const taskRouter = new Router();
 

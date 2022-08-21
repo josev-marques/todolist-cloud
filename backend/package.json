@@ -1,10 +1,10 @@
 {
   "name": "backend-todolist",
   "version": "1.0.0",
+  "type": "module",
   "description": "Serviço web API REST para lista de tarefas",
-  "main": "./src/index.js",
   "scripts": {
-    "start": "nodemon --exec ./node_modules/.bin/babel-node ./index.js"
+    "start": "npm install --progress=false && babel-node index.js"
   },
   "author": "josevmarques",
   "dependencies": {
@@ -15,15 +15,15 @@
     "mongoose": "^6.5.2"
   },
   "devDependencies": {
+    "nodemon": "^2.0.2",
+    "@babel/node": "^7.8.7",
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.9.0",
-    "@babel/node": "^7.8.7",
     "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/polyfill": "^7.11.5",
     "@babel/preset-env": "^7.9.0",
     "babel-plugin-inline-json-import": "^0.3.2",
     "babel-plugin-module-alias": "^1.6.0",
-    "babel-plugin-module-resolver": "^4.0.0",
-    "nodemon": "^2.0.2"
+    "babel-plugin-module-resolver": "^4.0.0"
   }
 }
