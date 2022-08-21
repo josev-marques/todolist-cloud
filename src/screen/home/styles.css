@@ -1,0 +1,52 @@
+.home {
+    color: #f0f0f0;
+}
+
+.home-header {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.input-home {
+    margin-right: 10px;
+    font-size: 1rem;
+    height: 30px;
+    width: 200px;
+    border: unset;
+    padding: unset;
+    padding-inline-start: unset;
+}
+
+.btn-home {
+    height: 30px;
+    width: 100px;
+    color: #282c34;
+    background-color: #f0f0f0;
+    padding: unset;
+    border: unset;
+}
+
+.btn-home:hover {
+    background-color: #6b6b6e;
+    color: #f0f0f0;
+    transition: 200ms;
+}
+
+.btn-home:active {
+    border: #f0f0f0 1px solid;
+    transition: 200ms;
+}
+
+.canvas {
+    width: 30%;
+    background-color: #dedede;
+    margin: auto;
+    color: #171717;
+    padding: 10px;
+}

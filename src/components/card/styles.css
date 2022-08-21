@@ -1,0 +1,42 @@
+.task-card {
+    background-color: #dedede;
+    min-height: 150px;
+    margin-bottom: 10px;
+}
+
+.container {
+    padding: 2px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: #6b6b6e 3px solid;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-row {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.description-row {
+    text-align: left;
+}
+
+.info-row {
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 1.2rem;
+}
+
